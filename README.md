@@ -10,10 +10,6 @@ You will need at least **2 sets** of the following for the project, 1 set for se
 3. Red, Amber, Green LED or you may simply get a PiStop Traffic Lights from [Pimoroni](https://shop.pimoroni.com/products/pistop-traffic-light-add-on-for-raspberry-pi)
 4. A [Pusher](https://pusher.com) account
 
-## Brief demo on YouTube video
-- [Cantonese](https://www.youtube.com/watch?v=FDy4raRLtmA)
-- [English](https://www.youtube.com/watch?v=vK2A5rX-TJ4)
-
 ## Setup
 ### Hardware setup
 With your Rasbperry Pi, VL53L0X sensor board and LEDs on hand, wire them like the following image:
