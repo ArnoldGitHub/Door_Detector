@@ -54,7 +54,7 @@ if __name__ == '__main__':     # Program start from here
 
         if 0 <= distance <= 200:
             state = (1,0,0)
-        elif 200 <= distance <= 400:
+        elif 200 <= distance <= 500:
             state = (0, 1, 0)
         else:
             state = (0, 0, 1)
