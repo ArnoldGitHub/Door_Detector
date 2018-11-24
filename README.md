@@ -65,7 +65,7 @@ git clone https://github.com/arnoldgithub/Door_Detector.git
 ### Python module installation
 We will also need to install the VL53L0X Python module, and some other Python library to make it work.
 ```bash
-pip3 install -r requiremenst.txt
+sudo pip3 install -r requiremenst.txt
 ```
 
 ## Configuration
@@ -84,8 +84,15 @@ You can also change the values of other section in the configuration file later,
 
 ## Testing
 If you have wired the traffic lights, you can test it by running:
+
+Testing LED setups
 ```
-python3 test_lights.py
+python3 test_led.py
+```
+
+Testing the sensor
+```
+python3 test_sensor.py
 ```
 
 Which should turn the LED alternatively. If it doesn't, check your wiring, or the config.ini file.
