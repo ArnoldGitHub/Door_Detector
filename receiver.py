@@ -136,7 +136,7 @@ if __name__ == '__main__':     # Program start from here
 
         control_lights(state)
         tof = VL53L0X.VL53L0X()
-
+        tof.open()
         # Start ranging
         tof.start_ranging(VL53L0X.Vl53l0xAccuracyMode.BETTER)
 
@@ -163,3 +163,4 @@ if __name__ == '__main__':     # Program start from here
             sleep(0.02)
 
         tof.stop_ranging()
+        tof.close()
