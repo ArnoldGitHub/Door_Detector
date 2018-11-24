@@ -1,10 +1,15 @@
+import configparser
 import json
 import platform, sys
 import VL53L0X
 import RPi.GPIO as GPIO #Used to interface with hardware on the Raspberry Pi.
 from time import sleep
 
+config = configparser.ConfigParser()
+config.read('config.ini')
+
 RED, AMBER, GREEN = 0, 1, 2
+LED = [config.getint('receiver', 'pin_red'), config.getint('receiver', 'pin_amber'), config.getint('receiver', 'pin_green')]
 state = (1, 1, 1)
 
 def gpio_setup():
